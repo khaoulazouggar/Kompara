@@ -1,0 +1,11 @@
+.App {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* @media (max-width: 700px) {
+    .App {
+      overflow: scroll;
+      background-color: #21314d;
+    }
+  } */

@@ -1,0 +1,140 @@
+.home_brand {
+  height: 100%;
+}
+
+.home {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home_content {
+  width: 800px;
+  height: 530px;
+  box-shadow: 0px 0px 17px 0px rgba(69, 51, 232, 0.8);
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.descreption {
+  border: none;
+  padding: 15px;
+  background: rgba(69, 51, 232, 0.8);
+  color: white;
+  border-radius: 9px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.decouvre_parti {
+  font-family: "Spartan", Sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  /* font-weight: 700; */
+  /* font-size: 17px; */
+}
+
+.choose_content {
+  height: 40%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.in_choose_content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.checkbox_div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.checkbox_span {
+  width: 40%;
+  color: rgb(29, 176, 46);
+  font-size: 22px;
+}
+
+@keyframes clignote {
+  0% {
+    box-shadow: 0px 0px 10px rgba(69, 51, 232, 0.8);
+  }
+  50% {
+    box-shadow: 0px 0px 0px rgba(69, 51, 232, 0.8);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgba(69, 51, 232, 0.8);
+  }
+}
+
+.submit_button {
+  background-color: rgb(29, 176, 46);
+  border: none;
+  padding: 15px;
+  border-radius: 9px;
+  margin-bottom: 70px;
+  width: 240px;
+  cursor: pointer;
+  transition: background-color 1s;
+  outline: none;
+  animation-name: clignote;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.submit_button:hover {
+  background-color: #148700;
+}
+/* .checkbox_div label:nth-child(1){
+margin-right: 50px;
+} */
+
+label {
+  color: rgba(69, 51, 232, 0.8);
+  font-size: 17px;
+  width: 50%;
+}
+.image {
+  width: 150px;
+}
+.brand {
+  padding: 28px;
+}
+
+@media only screen and (max-width: 880px) {
+  .home_content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .in_choose_content {
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+  }
+  .checkbox_span {
+    text-align: center;
+  }
+  label {
+    width: unset;
+  }
+  .checkbox_div {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .checkbox_span {
+    width: unset;
+  }
+}
