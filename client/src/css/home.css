@@ -116,6 +116,19 @@ label {
 .brand {
   padding: 28px;
 }
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+
+.error h1 {
+  color: rgba(69, 51, 232, 0.8);
+  font-family: "Spartan", Sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 14px rgba(103, 58, 183, 0.75);
+}
 
 @media only screen and (max-width: 880px) {
   .home_content {
@@ -145,11 +158,10 @@ label {
   .checkbox_span {
     width: unset !important;
   }
-
 }
 
 @media only screen and (max-width: 320px) {
-    .submit_button{
-        width: 90%;
-      }
+  .submit_button {
+    width: 90%;
+  }
 }
